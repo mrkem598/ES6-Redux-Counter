@@ -6,10 +6,10 @@ var path = require('path');
 var app = express();
 var PORT = process.env.PORT || 3000; // Sets an initial port. We'll use this later in our listener
 // Middleware
-app.use(express.static(path.join(_dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 // Routes
-app.get('*', functionreq, res) {
-   res.sendFile('public/index.html', { root: _dirname });
+app.get(`*`, function(req, res) {
+   res.sendFile('public/index.html', { root: __dirname });
 });
 
 // Listener
