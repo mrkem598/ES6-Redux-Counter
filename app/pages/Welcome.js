@@ -30,7 +30,7 @@ class Welcome extends Component {
         <Col md={8} offset={{ md: 2 }}>
           <Card>
             <CardText>
-              React-Redux Example!
+              ES6 React-Redux Counter Application!
             </CardText>
             <CardTitle
               title={`Welcome ${this.props.user}!`}
