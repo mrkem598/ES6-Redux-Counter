@@ -11,12 +11,11 @@ injectTapEventPlugin();
 export default class Main extends Component {
   render() {
     return (
-        <MuiThemeProvider>
+    <MuiThemProvider>
           <Container>
       {this.props.children}
-     </Container>
+          </Container>
    </MuiThemProvider>
   );
   }
 }
-    
